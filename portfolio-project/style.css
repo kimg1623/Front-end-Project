@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	/* border, padding 값이 지정한 width, height에 포함됨 */
+}
+a, a:link, a:visited{
+	color: inherit; /* 상위 태그 상속 */
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+/************* header *****/
+.container{
+	width: 1140px;
+	margin: 0 auto;
+}
+header{
+	position: absolute;
+	color: black;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	padding: 1rem;	
+}
+header .container {		/* 자식 태그 구성요소를 양쪽 균등/수직 가운데로 배치 */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+header nav ul{
+	display: flex;	/* ul의 하위 요소 가로로 배치 */ 
+}
+header nav ul li{
+	padding: 10px;
+}
+header button{
+	background: transparent; /* 배경색 : 투명 */
+	border: 0;
+	cursor: pointer;
+}
+header h1 button  {
+	font-size: 2rem;
+	font-weight: bold;
+}
+header nav ul li button  {
+	font-size: 1.2rem;
+}
