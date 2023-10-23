@@ -21,8 +21,8 @@ li{
 	margin: 0 auto;
 }
 header{
-	position: absolute;
-	color: black;
+	position: fixed;	/* 상단 메뉴 영역 상단 고정 */
+	
 	top: 0;
 	z-index: 1;
 	width: 100%;
@@ -44,6 +44,7 @@ header button{
 	background: transparent; /* 배경색 : 투명 */
 	border: 0;
 	cursor: pointer;
+	color: white;	
 }
 header h1 button  {
 	font-size: 2rem;
@@ -51,6 +52,7 @@ header h1 button  {
 }
 header nav ul li button  {
 	font-size: 1.2rem;
+	color: white;
 }
 /***** main *****/
 main{
@@ -70,7 +72,7 @@ main h4{
 main h2{
 	font-size: 3.5rem;
 	margin: 2rem 0;
-	letter-spacing: 3px; /* 자간 */
+	letter-spacing: 2px; 		/* 자간 */
 	font-family: "Varela Round", sans-serif;
 }
 main p{
