@@ -226,3 +226,33 @@ section .do-me .do-inner:hover i{ /* do-inner 클래스에 마우스를 올리�
 	background-attachment: fixed;
 	height: 650px;
 }
+/***** section03 *****/
+section .portfolio::after{ /* float 속성 해제 */
+	content: "";
+	display: block;
+	clear: both;
+}
+section.portfolio .portfolio-inner{ /* portfolio-inner 영역 잡기, 일치선택자로 */
+	width: 30%;
+	margin-right: 5%;
+	padding: 1rem 1rem 1.5rem 1rem;
+	float: left;
+	background-color: #f8f8f8;
+	border: 1px solid #ccc;
+	margin-bottom: 3rem;
+}
+section.portfolio .portfolio-inner:nth-child(3n){ /* portfolio-inner 3번째 오른쪽 여백 삭제 */
+	margin-right: 0;
+}
+section.portfolio .portfolio-inner img{ /* 이미지 크기를 부모요소 크기로 지정 */
+	width: 100%;
+	display: block;
+}
+section.portfolio .portfolio-inner strong{ /* strong 태그 색상과 간격 */
+	color: #ff6a6a;
+	margin: 0.5rem 0;
+	display: block;
+}
+section.portfolio .portfolio-inner h3{ /* 제목 색상과 간격 */
+	font-size: 1.5rem;
+}
