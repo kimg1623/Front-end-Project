@@ -14,7 +14,7 @@ li{
 	list-style: none;
 }
 
-/************* header *****/
+/***** header *****/
 .container{
 	width: 1140px;
 	margin: 0 auto;
@@ -50,4 +50,62 @@ header h1 button  {
 }
 header nav ul li button  {
 	font-size: 1.2rem;
+}
+/***** main *****/
+main{
+	width: 100%;		/* 부모요소의 100% */
+	height: 100vh;	/* viewport높이의 100% */
+	color: white;
+	background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('image/me.jpg');
+	background-size: cover; /* cover: 작은 폭을 맞춰서 넣기 */	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+main h4{
+	font-size: 2rem;
+}
+main h2{
+	font-size: 3.5rem;
+	margin: 2rem 0;
+	letter-spacing: 3px; /* 자간 */
+}
+main p{
+	max-width: 700px;
+	margin: 0 auto;
+	font-size: 1.25rem;
+}
+main button.download { /* 다운로드 버튼 스타일 */
+	background-color: transparent;
+	border: 3px solid white;
+	border-radius: 20px;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+main button.mouse{
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 2rem;
+	position: absolute;	/* offset 값을 주지 않도록 absolute로 설정 */
+	bottom: 1rem;				/* 하단 공백 주기 */
+	left: 50%;					/* 왼쪽 모서리 좌표 중앙 배치 */
+	transform: translateX(-50%);	/* 도형의 50%를 왼쪽으로 배치하여 화면 중앙에 배치 */
+	animation: upDown 1s ease-in-out infinite; /* ease-in-out: transition*/
+	cursor: pointer;
+}
+@keyframes upDown {
+	0%{ 
+		bottom: 1rem;
+	}
+	50%{
+		bottom:1.5rem;
+	}
+	100%{ 
+		bottom: 1rem;
+	}
 }
