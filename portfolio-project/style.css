@@ -219,3 +219,10 @@ section .do-me .do-inner:hover{ /* do-inner 클래스에 마우스를 올리면 
 section .do-me .do-inner:hover i{ /* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경*/
 	color: white;
 }
+/***** bg배경영역 *****/
+.bg{
+	background: url('./images/background.jpg') center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 650px;
+}
