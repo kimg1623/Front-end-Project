@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
 
 *{
 	margin: 0;
@@ -70,6 +71,7 @@ main h2{
 	font-size: 3.5rem;
 	margin: 2rem 0;
 	letter-spacing: 3px; /* 자간 */
+	font-family: "Varela Round", sans-serif;
 }
 main p{
 	max-width: 700px;
@@ -107,5 +109,22 @@ main button.mouse{
 	}
 	100%{ 
 		bottom: 1rem;
+	}
+}
+/* 텍스트 타이핑 효과 css 구현 */
+main h2 span::after { /* 커서 모양 구현 40px-3px */
+	content: "";
+	height: 40px;
+	width: 3px;
+	background-color: #ffffff;
+	display: inline-block;
+	animation: blink .7s ease-in-out infinite;
+}
+@keyframes blink{ /* 커서 애니메이션 */
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
 	}
 }
