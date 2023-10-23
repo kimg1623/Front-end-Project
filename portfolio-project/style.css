@@ -227,7 +227,7 @@ section .do-me .do-inner:hover i{ /* do-inner 클래스에 마우스를 올리�
 	height: 650px;
 }
 /***** section03 *****/
-section .portfolio::after{ /* float 속성 해제 */
+section.portfolio::after{ /* float 속성 해제 */
 	content: "";
 	display: block;
 	clear: both;
@@ -255,4 +255,70 @@ section.portfolio .portfolio-inner strong{ /* strong 태그 색상과 간격 */
 }
 section.portfolio .portfolio-inner h3{ /* 제목 색상과 간격 */
 	font-size: 1.5rem;
+}
+/***** section04 *****/
+section.contact .contact-me::after{ /* float 속성 해제 */
+	content: "";
+	display: block;
+	clear: both;
+}
+section.contact .contact-me .left{ /* 왼쪽 영역 지정 */
+	width: 30%;
+	float: left;
+}
+section.contact .contact-me .right{ /* 오른쪽 영역 지정 */
+	float: left;
+	width: 65%;
+	margin-left: 5%;
+	margin-bottom: 2rem;
+	border: 1px solid #ccc;
+	padding: 1rem;
+}
+section.contact .contact-me .left .card{ /* 내 정보 영역 크기 지정 */
+	border: 1px solid #ccc;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.25rem;
+}
+section.contact .contact-me .left .card .icon i{ /* 아이콘 사이즈 지정 */
+	font-size: 2rem;
+	margin-right: 15px;
+}
+section.contact .contact-me .right .form-group{ /* form-group 사이 간격 지정 */
+  margin-bottom:1.25rem;
+}
+section.contact .contact-me .right .form-group label{ /* label 태그가 인라인 성격이어서 외부 여백을 적용하기 위해 block으로 변경 */
+  display:block;
+  margin-bottom:0.85rem;
+}
+section.contact .contact-me .right .form-group input{ /* input 요소 꾸미기 */
+  padding:0.625rem;
+  width:100%;
+  outline:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+section.contact .contact-me .right .form-group input:focus{ /* :focus 가상 클래스 선택자로 입력 요소에 커서가 활성화되면 파란색 테두리와 그림자 효과 추가 */ 
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+section.contact .contact-me .right .form-group textarea{ /* textarea 요소 꾸미기 */
+  height:300px;
+  width:100%;
+  resize:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+section.contact .contact-me .right .form-group textarea:focus{ /* textarea 활성화 효과 추가 */
+  outline:none;
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+} 
+section.contact .contact-me .right button{/* send 버튼 스타일 추가 */
+  width:100%;
+  padding:1rem;
+  background-color:#f78b00;
+  border:none;
+  color:white;
 }
