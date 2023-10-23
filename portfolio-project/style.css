@@ -130,7 +130,7 @@ main h2 span::after { /* 커서 모양 구현 40px-3px */
 		opacity: 0;
 	}
 }
-/***** section *****/
+/***** section01 *****/
 section{
 	font-family: "Poppins", sans-serif;
 	padding: 5rem 0;
@@ -181,6 +181,41 @@ section .about-self .right p{ /* 본문 오른쪽 p 태그의 크기와 여백 �
 	margin: 1rem 0;
 }
 section .about-self .right .social a{ /* 본문 오른쪽의 아이콘 폰트 크기와 여백 지정 */
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin-right: 0.2rem;
+}
+/***** section02 *****/
+section .do-me::after{ /* float 속성 해제 */
+	content: "";
+	display: block;
+	clear: both;
+}
+section .do-me .do-inner{ /* 사각형 크기와 간녁, 내부 여백 설정 */
+	background-color: #fff;
+	width: 30%;
+	padding: 2rem;
+	float: left;
+	margin-right: 5%;	/* 첫번째, 두번째 사각형의 오른쪽 여백줘서 100% 채우도록 */
+	cursor: pointer;
+}
+section .do-me .do-inner:last-child{ /* 마지막 사각형의 외부 여백 설정 */
+	margin-right: 0;
+}
+section .do-me .do-inner .icon{ /* 아이콘 폰트 크기와 색상 */ 
+	font-size: 2.5rem;
+	color: #ff6a6a;
+}
+section .do-me .do-inner .content h3{ /* 사각형 제목 텍스트 크기와 간격 */
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+section .do-me .do-inner .content p{ /* 사각형 본문 텍스트 크기와 간격 */
+	font-size: 1.15rem;
+}
+section .do-me .do-inner:hover{ /* do-inner 클래스에 마우스를 올리면 배경색과 텍스트 색상 변경*/
+	background-color: lightcoral;
+	color: white;
+}
+section .do-me .do-inner:hover i{ /* do-inner 클래스에 마우스를 올리면 아이콘 폰트 색상 변경*/
+	color: white;
 }
