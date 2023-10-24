@@ -322,3 +322,105 @@ section.contact .contact-me .right button{/* send 버튼 스타일 추가 */
   border:none;
   color:white;
 }
+/***** 반응형 *****/
+/* 화면 너비가 1140px 이하일 때 */ 
+@media screen and (max-width: 1140px){
+  main .container{  
+    width: 992px; /* 메인 영역 기준 너비 변경: 1140 -> 992px */
+  }
+  section .container{
+    width:600px; /* 섹션 영역 기준 너비 변경: 1140 -> 600px */
+								 /* 2단으로 처리하기 위해서 600으로 적절히 지정 */
+	}
+  section .about-self .left{ /* About me 영역 왼쪽을 너비를 50% -> 100% 변경 */
+    width:100%;
+    margin-bottom: 1.5rem;
+  }
+  section  .about-self .right{ /* About me 영역 오른쪽 너비를 50% -> 100% 변경 */
+    width:100%;
+    padding:0; /* 외부 여백 초기화 */
+  }
+  section .do-me .do-inner{ /* What I Do 영역의 콘텐츠 박스의 너비를 30% -> 48% 변경 */
+    width:48%;
+    margin-bottom: 1.5rem;
+    margin-right: 0; /* 외부 여백 초기화 */
+  }
+  section .do-me .do-inner:nth-child(2n+1){
+    margin-right:4%; /* 1, 3, 5...번째 본문 사각형에 margin-right 4% 적용 */
+  }
+  section .portfolio-me .portfolio-inner{ /* PortFolio 영역의 콘텐츠 박스 너비를 30% ->  48% 변경 */
+    width:48%;
+    margin-right: 0; /* 외부 여백 초기화 */
+  }
+  section .portfolio-me .portfolio-inner:nth-child(2n+1){
+    margin-right:4%; /* 내부 요소마다 마진 줄이기 48% * 2개 */
+  }
+  section.contact .contact-me .left{  /* Contact With Me 영역 왼쪽 너비 변경 30% -> 100% */
+    width:100%;
+  }
+  section.contact .contact-me .right{ /* Contact With Me 영역 왼쪽 너비 변경 65% -> 100% */
+    width:100%; 
+    margin-left: 0; /* margin 초기화 */
+  }
+}
+/* 화면 너비가 992px 이하일 때 */ 
+@media (max-width: 992px){
+  html{	
+    font-size: 14px; /* 기본 폰트 사이즈 조정 */
+  }
+  main .container{
+    width: 768px; /* 메인 영역 기준 너비 변경: 1140 -> 992px *//* 992px -> 768px */
+  }
+  /* PortFolio 영역 */
+  section .portfolio-me .portfolio-inner{
+    width:100%; /* 48% -> 100% 변경 */
+  } 
+}
+/* 화면 너비가 768px 이하일 때 */ 
+@media (max-width: 768px){
+  html{
+    font-size: 13px; /* 기본 폰트 사이즈 조정 */
+  }
+
+  /* 메인 영역 container 기준 너비 변경 */
+  main .container{
+    width: 576px; /* 768px -> 576px */
+  }
+  section .container{
+    width:400px; /* 600px -> 400px */
+  }
+  section .do-me .do-inner{
+    width:100%; /* 48% -> 100% */
+    margin-right: 0; /* margin 초기화 */
+  }
+}
+/* 화면 너비가 576px 이하일 때 */ 
+@media (max-width: 576px){
+  html{
+    font-size: 12px; /* 기본 폰트 사이즈 조정 */
+  }
+  main .container{
+    width: 400px; /* 576px -> 400px */
+  }
+  section .container{
+    width:360px; /* 400px -> 360px */
+  }
+}
+/* 화면 너비가 400px 이하일 때 */ 
+@media (max-width: 400px){
+  html{
+    font-size: 11px; /* 기본 폰트 사이즈 조정 */
+  }
+  main .container{
+    width: 320px;/* 400px -> 320px */
+  }
+  main h4{
+    font-size: 1.5rem;
+  }
+  section .container{
+    width: 320px;/* 360px -> 320px */
+  }
+  section .title h2{
+    font-size: 3rem; /* 3.5rem -> 3rem */
+  }
+}
