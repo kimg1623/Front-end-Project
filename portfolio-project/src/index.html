@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Start header(시맨틱 태그): 로고, 상단메뉴--> 
+  <header>  
+    <div class="container"> <!--HTML 구조의 핵심인 container 클래스가 포함된 div 태그-->
+      <h1>
+        <button data-animation-scroll="true" data-target="#main">JIWON</button>  <!--input태그 중 button 단독으로 사용 가능-->
+      </h1>
+      <!--navigation(시맨틱 태그): 상단메뉴-->
+      <nav> 
+        <ul>
+          <li>
+            <button data-animation-scroll="true" data-target="#about">About</button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#features">Feature</button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#portfolio">Portfolio</button>
+          </li>
+          <li>
+            <button data-animation-scroll="true" data-target="#contact">Contact</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--End header-->
+  <!--Star main: 페이지 접속 시 보이는 영역-->
+  <main id="main">
+    <div class="container">
+      <h4>Welcome</h4>
+      <h2>I wanna be A <span></span></h2> <!--js적용을 위해 span 내부 텍스트 삭제-->
+      <p>I am studying hard to become a Good Back-End developer.</p>
+      <button class="download">DOWNLOAD CV</button>
+      <button class="mouse"><i class="fa-solid fa-computer-mouse"></i></button>
+    </div>
+  </main>
+  <!--End main-->
+  <!--Start Section01 : About me-->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="title">
+        <h4>Who I am</h4>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-self">
+        <div class="left">
+          <img src="images/me_fly.jpg" alt="사진">
+        </div>
+        <div class="right">
+          <h3>Hello, <strong>I'm Jiwon</strong></h3>
+          <p>I wanna be A Back-End And Full-Stack Developer.</p>
+          <div class="social">
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitch"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div><!--End container-->
+  </section>
+  <!--End Section01-->
+  <!--Start Section02 : What I Do-->
+  <section id="featrues" class="do">
+    <div class="container">
+      <div class="title">
+        <h4>Features</h4>
+        <h2>What I Do</h2>
+      </div>
+      <div class="do-me">
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <div class="content">
+            <h3>HTML5</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus condimentum felis eu lacinia. Fusce sit amet dapibus enim, et commodo eros. Pellentesque congue nibh sed neque imperdiet sollicitudin. </p>
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <div class="content">
+            <h3>CSS3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus condimentum felis eu lacinia. Fusce sit amet dapibus enim, et commodo eros. Pellentesque congue nibh sed neque imperdiet sollicitudin. </p>
+          </div>
+        </div>
+        <div class="do-inner">
+          <div class="icon">
+            <i class="fa-brands fa-java"></i>
+          </div>
+          <div class="content">
+            <h3>JAVA</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus condimentum felis eu lacinia. Fusce sit amet dapibus enim, et commodo eros. Pellentesque congue nibh sed neque imperdiet sollicitudin. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section02-->
+  <div class="bg"></div> <!--background: bg 영역-->
+  <!--Start Section03 : PortFolio-->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="title">
+        <h4>PORTFOLIOBACK</h4>
+        <h2>PortFolio</h2>
+      </div>
+      <div class="portfolio-me">
+        <div class="portfolio-inner">
+          <img src="images/mock1.png" alt="샘플이미지1">
+          <strong>BRANDING</strong>
+          <h3>Package Design</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock2.png" alt="샘플이미지2">
+          <strong>DEVELOPMENT</strong>
+          <h3>Tablet App Dev</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock3.png" alt="샘플이미지3">
+          <strong>MARKETING</strong>
+          <h3>Coka Cola</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock4.png" alt="샘플이미지4">
+          <strong>APP</strong>
+          <h3>FaceBook Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock5.png" alt="샘플이미지5">
+          <strong>APP</strong>
+          <h3>Netflix Clone</h3>
+        </div>
+        <div class="portfolio-inner">
+          <img src="images/mock6.png" alt="샘플이미지6">
+          <strong>WEB</strong>
+          <h3>FirmBee Web</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section03-->
+  <!--Start Section04 : Contact With Me-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="title">
+        <h4>CONTACT</h4>
+        <h2>Contact With Me</h2>
+      </div>
+      <div class="contact-me">
+        <div class="left">
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="info-text">
+              <h3>phone</h3>
+              <p>010-1234-1234</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <div class="info-text">
+              <h3>e-mail</h3>
+              <p>kimg1623@naver.com</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <div class="info-text">
+              <h3>address</h3>
+              <p>Jungrang-gu, Seoul, Korea</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">name</label>
+              <input type="text" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">email</label>
+              <input type="text" id="email">
+            </div>
+            <div class="form-group">
+              <label for="msg">message</label>
+              <textarea id="msg"></textarea>
+            </div>
+            <button type="submit">send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Section04-->
+  <script src="script.js"></script> <!--화면이 표시된 후 동적제어-->
+</body>
+</html>
